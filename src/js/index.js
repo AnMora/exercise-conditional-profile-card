@@ -31,6 +31,7 @@ function render(variables = {}) {
 
   let name = variables.name;
   let lastname = variables.lastname;
+  //Comentario de prueba
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
