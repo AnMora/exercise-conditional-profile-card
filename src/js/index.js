@@ -37,17 +37,6 @@ function render(variables = {}) {
   let linkedin = variables.linkedin;
   let github = variables.github;
   let twitter = variables.twitter;
-  /*
-        twitter: null,
-        github: "alesanchezr",
-        linkedin: null,
-        instagram: null,
-        name: null,
-        lastname: null,
-        role: null,
-        country: null,
-        city: null
-    */
   //Comentario de prueba
 
   // reset the website body with the new html output
