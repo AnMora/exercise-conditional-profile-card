@@ -33,6 +33,7 @@ function render(variables = {}) {
   let lastname = variables.lastname;
   let role = variables.role;
   let city = variables.city;
+  let country = variables.country;
   let instagram = variables.instagram;
   let linkedin = variables.linkedin;
   let github = variables.github;
