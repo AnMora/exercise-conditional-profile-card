@@ -31,6 +31,23 @@ function render(variables = {}) {
 
   let name = variables.name;
   let lastname = variables.lastname;
+  let role = variables.role;
+  let city = variables.city;
+  let instagram = variables.instagram;
+  let linkedin = variables.linkedin;
+  let github = variables.github;
+  let twitter = variables.twitter;
+  /*
+        twitter: null,
+        github: "alesanchezr",
+        linkedin: null,
+        instagram: null,
+        name: null,
+        lastname: null,
+        role: null,
+        country: null,
+        city: null
+    */
   //Comentario de prueba
 
   // reset the website body with the new html output
@@ -38,13 +55,13 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${name} ${lastname}</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h2>${role}</h2>
+          <h3>${city}</h3>
           <ul class="position-right">
-            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter">${twitter}</i></a></li>
+            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github">${github}</i></a></li>
+            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin">${linkedin}</i></a></li>
+            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram">${instagram}</i></a></li>
           </ul>
         </div>
     `;
