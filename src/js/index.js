@@ -65,9 +65,11 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://www.wallpapertip.com/wmimgs/27-275491_mortal-kombat-x-for-xbox-360-and-playstation.jpg",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://c4.wallpaperflare.com/wallpaper/368/918/351/the-game-scorpio-fighter-art-mortal-kombat-hd-wallpaper-preview.jpg",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
