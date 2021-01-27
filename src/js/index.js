@@ -38,20 +38,21 @@ function render(variables = {}) {
   let linkedin = variables.linkedin;
   let github = variables.github;
   let twitter = variables.twitter;
+  let socialMediaPosition = variables.socialMediaPosition;
   //Comentario de prueba
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${name} ${lastname}</h1>
-          <h2>${role}</h2>
-          <h3>${city} ${country}</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter">${twitter}</i></a></li>
-            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github">${github}</i></a></li>
-            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin">${linkedin}</i></a></li>
-            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram">${instagram}</i></a></li>
+          <h1>${variables.name} ${variables.lastname}</h1>
+          <h2>${variables.role}</h2>
+          <h3>${variables.city} ${variables.country}</h3>
+          <ul class=${variables.socialMediaPosition}"position-right">
+            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter">${variables.twitter}</i></a></li>
+            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github">${variables.github}</i></a></li>
+            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin">${variables.linkedin}</i></a></li>
+            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram">${variables.instagram}</i></a></li>
           </ul>
         </div>
     `;
@@ -71,7 +72,7 @@ window.onload = function() {
     avatarURL:
       "https://c4.wallpaperflare.com/wallpaper/368/918/351/the-game-scorpio-fighter-art-mortal-kombat-hd-wallpaper-preview.jpg",
     // social media bar position (left or right)
-    socialMediaPosition: "position-left",
+    socialMediaPosition: "left",
     // social media usernames
     twitter: null,
     github: "alesanchezr",
